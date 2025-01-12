@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+   
+    <title>Pretty Nails</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/link2.css">
+    <link rel="stylesheet" href="css/link3.css">
+    <link rel="stylesheet" href="css/link4.css">
+    <!--Ícones Material Design-->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+</head>
+
+<body>
+    <div id="app">
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+
+            <!-- Barra de navegação -->
+            <div class="toolbar toolbar-bottom">
+                <div class="toolbar-inner display-flex">
+                    <a href="/index/" class="tab-link link active">
+                        <i class="mdi mdi-home"></i>
+                        <span>Início</span>
+                    </a>
+                    <a href="/link2/" class="tab-link link">
+                        <i class="mdi mdi-magnify"></i>
+                        <span>Buscar</span>
+                    </a>
+                    <a href="/link3/" class="tab-link link">
+                        <i class="mdi mdi-calendar"></i>
+                        <span>Calendário</span>
+                    </a>
+                    <a href="/link4/" class="tab-link link">
+                        <i class="mdi mdi-account"></i>
+                        <span>Perfil</span>
+                    </a>
+                </div>
+            </div> 
+
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="index" class="page color-theme-blue">
+
+                <!-- Topo do site -->
+                <div class="topo">
+                    <a href="#" class="config">
+                        <i class="mdi mdi-menu hamburguer-menu"></i>
+                    </a>
+                    <h1 class="titulo">Pretty Nails</h1>
+                </div>
+
+                <!-- Conteúdo da página -->
+                <div class="page-content">
+                    <div class="block no-margin-top">
+                        <div href="#" class="sessoes">
+                            <div class="texto-sessoes">
+                                <div class="titulo-sessoes">Sessões</div>
+                                <div>confira suas sessões com manicures</div>
+                            </div>
+                            <div href="#" class="prancheta">
+                                <i class="mdi mdi-clipboard-outline"></i>
+                            </div>
+                        </div>
+                        <div class="titulo-temas"><h1>Temas</h1></div>
+                        <div class="temas">
+                            <a href="https://www.youtube.com"><div class="tema1"><h2>Francesinha</h2></div></a>
+                            <div class="tema2"><h2>Casual</h2></div>
+                            <div class="tema3"><h2>Almond</h2></div>
+                        </div>
+    
+                        <!-- Swiper perfis -->
+                        <div class="perfis">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                        
+                                    <!-- PERFIS -->
+                                    <div class="swiper-slide">
+                                        <div class="perfil">
+                                            <i class="mdi mdi-account"></i>
+                                        </div>
+                                        <div class="nome">Nome</div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="perfil">
+                                            <i class="mdi mdi-account"></i>
+                                        </div>
+                                        <div class="nome">Nome</div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="perfil">
+                                            <i class="mdi mdi-account"></i>
+                                        </div>
+                                        <div class="nome">Nome</div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="perfil">
+                                            <i class="mdi mdi-account"></i>
+                                        </div>
+                                        <div class="nome">Nome</div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="perfil">
+                                            <i class="mdi mdi-account"></i>
+                                        </div>
+                                        <div class="nome">Nome</div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="perfil">
+                                            <i class="mdi mdi-account"></i>
+                                        </div>
+                                        <div class="nome">Nome</div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="perfil">
+                                            <i class="mdi mdi-account"></i>
+                                        </div>
+                                        <div class="nome">Nome</div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="perfil">
+                                            <i class="mdi mdi-account"></i>
+                                        </div>
+                                        <div class="nome">Nome</div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="perfil">
+                                            <i class="mdi mdi-account"></i>
+                                        </div>
+                                        <div class="nome">Nome</div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="perfil">
+                                            <i class="mdi mdi-account"></i>
+                                        </div>
+                                        <div class="nome">Nome</div>
+                                    </div>
+                        
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+	<!-- jQuery -->
+	<script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>	
+    <!-- Roteamento do app-->
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+</body>
+
+</html>

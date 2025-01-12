@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+    --branco: #ffff;
+    --preto: #2a2a2a;
+    --tom1: #d05f4b;
+    --tom2: #d87b6b;
+    --tom3: #e0978a;
+    --tom4: #e8b2a9;
+    --tom5: #ecc0b8;
+    --tom6: #f1cec8;
+    --tom7: #f5dcd7;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+}
+
+/*Cabeçalho==============================================================*/
+.topo{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: var(--branco);
+    position: fixed;
+    z-index: 2;
+}
+
+.titulo{
+    font-weight: 600;
+    margin-left: 10%;
+    color: var(--tom3);
+}
+
+.config{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-left: 5%;
+    font-size: 35px;
+    color: var(--preto);
+    cursor: pointer;
+}
+
+.config:hover{
+    color: var(--tom3);
+}
+
+/*Sessões===============================================================*/
+.sessoes{
+    height: 55px;
+    margin: 20px;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    background: linear-gradient(45deg, var(--tom6),var(--tom5), var(--tom4));
+}
+
+.sessoes:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.texto-sessoes{
+    max-height: 55px;
+    margin-left: 6%;
+}
+
+.titulo-sessoes{
+    font-size: 25px;
+    margin-bottom: -12px;
+    font-weight: 600;
+}
+
+.prancheta{
+    width: 10px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8%;
+    font-size: 30px;
+    color: var(--preto);
+}
+
+/*Temas=================================================================*/
+.titulo-temas{
+    display: flex;
+    justify-content: center;
+}
+
+.temas{
+    height: auto;
+    margin-bottom: 60px;
+}
+
+.temas div {
+    height: 70px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    color: var(--branco);
+}
+
+.temas div:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.tema1 {
+    background-image: url('https://img-21.ccm2.net/s9vVN6C2dtPDAZSaB1X0pro5mTg=/49fd0076a1574f3f9724a7d842191036/ccm-faq/1381414.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.tema2 {
+    background-image: url('https://th.bing.com/th/id/R.b4596b24b0aa892dc1b685750504802f?rik=5GmfYX4B8uq%2bsA&pid=ImgRaw&r=0.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.tema3 {
+    background-image: url('https://th.bing.com/th/id/OIP.l8B5aDLPEnD_2wuOC-wHqgHaHa?rs=1&pid=ImgDetMain.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/*Perfis================================================================*/
+.perfis{
+    background: linear-gradient(130deg, var(--tom6), var(--tom5), var(--tom4));
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #000;
+    border-radius: 20px;
+    height: auto;
+    
+}
+ 
+.swiper {
+    width: 100%;
+    height: auto;
+    
+}
+
+.perfil{
+    font-size: 50px;
+    background: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    height: 100px;
+    width: 100px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    margin: 20px 0 20px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.nome{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Barra de navegação====================================================*/
+.toolbar{
+    height: 80px;
+}
+
+.toolbar-inner{
+    background-color: var(--branco);
+    border-top: 1px solid var(--tom3);
+}
+
+.toolbar-inner .link{    
+    flex:1;
+    height: 80px;  
+    line-height: 25px; 
+    font-weight:bold;
+    color: var(--tom3);     
+}
+
+.toolbar-inner .link:not(.active){
+    color: var(--preto);
+    font-weight:normal;
+}
+
+.toolbar-inner > .link i{
+    font-size: 28px;
+}
+
+.tab-link{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
